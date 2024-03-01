@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Sixtyfour&display=swap" rel="stylesheet">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="logo">
+        <a class="siteAlura" href="https://www.alura.com.br"> 
+        <img src="./assets/Alura-logo.png" ></a>
+    </header>
+
+<main class="decodificador">
+    <section class="decodificador__principal">
+        <h1 class="decodificador__titulo">Digite seu texto a baixo</h1>
+        <textarea class="decodificador__principal__texto" name="decodificador" id="entradaTexto"></textarea>
+
+        <div class="codificador__botoes">
+            <p class="decodificador__texto__atencao"><span class="decodificador__atencao">!</span><u>Apenas letras minúsculas e sem acento.</u></p>
+            <button  class="botao__botao__primario"   type="submit" onclick="criptografia()">Criptografar</button>
+            <button  class="botao__botao__secundario" type="submit" onclick="descriptografar()">Descriptografar</button>
+        </div>
+    </section>
+
+<aside class="decodificador__alternativo" id="decodificador__alternativo">
+    <figure class="decodificador__alternativo__imagem" id="img">
+        <img class="decodificador__alternativo__imagemConfig" src="./assets/Detetive.png" alt=" detetive usando uma lupa">
+        <figcaption class="decodificador__alternativo__imagemDescricao" >detetive com uma lupa</figcaption>
+    </figure>
+        <h2 class="decodificador__alternativo__titulo" id="textArea-Decodificador">Nossa! nenhuma mensagem encontrada</h2>
+        <p class="decodificador__alternativo__titulo__paragrafo" id="paragrafo-ultimo-texto">Insira um texto que você queira criptografar ou descriptografar.</p>            
+        <textarea class="decodificador__alternativo__texto" name="saidaTexto" id="textoResultante" cols="30" rows="10" readonly></textarea>
+        <div class="decodificador__botao__copiar" id="botaoCopiar"></div>
+        </aside>
+</main>
+
+    <footer class="credenciais">
+        <p class="credenciais__titulo">Desenvolvido Por Lucas Machado<p>
+        <section class="redes__sociais">
+            <a class="redes__link" href="https://www.linkedin.com/in/lucas-machado-silva-115b52171/"> 
+            <img src="./assets/linkedin.png">
+            </a>
+            <a class="redes__link" href="https://github.com/LMachadoS"><img src="./assets/github.png">
+            </a>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
